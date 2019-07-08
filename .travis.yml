@@ -11,6 +11,8 @@ deploy:
   api_key:
     secure: Yd3AW2qn6RDKevNXQ62vphVrDB244FTZCvdV7QFMb+SLUMnbsitzD0n5EnyazX+36EcSvLXS3oCCE/EnZaHiQCnnL+W3qd0VSMq6gOl5l9hxSWXSfB4WztNZS5zICJF1FgDygyiwJoJQ2oTZdUbJLykbdDAy3aqe/QhJW4+JCGoJoL1Ukc35x6uqAjSBgEIENn4KgJMM2HfKYUxQxu3Sgay6AiLOcZ9jEObvph6Ie5OCNV7zsIgDw8V/O91x40a1ZyGdo7uES22HMlPlKWn2UcfqcagQ4F4kWOE9KzcVqVDrQPLSDFxLcezeVqvYQ/WqUCNjJ7k2A2uxo32hWbn7/4ZpdXo88Ap9UGfyiGD2D1jpitmTrr/AZlEz1T4t3/6H2RVDpSc8UjnnI8tsEWiYvqGG/hSMGElr5iO11ovrMT6zfoTJ+289f+qDYs7sUZNzIPeUYhgF+sfaQTAn4djsaVEXf8+4lGF1bR9BGVdcpiwERv8THeL3AHeK14vRtXlJe31W1GgX1T7gPXWQTHQCVbVhkHE9fTombw63WvhU3agdmsM/uv5G6Gvzzx7+vcFHu5oZOG5pKo0w6cHZnbaNCKPazdqdatflIsxKu4DvcKoXxcFlZXVzPd8b3y2te0oiTvMZDCgG8tEtLGKvAUZKDsv54J12nYmcJ3rSkeoN/s0=
   file: test-ci-builds-golang
+  skip_cleanup: true
+  draft: true
   on:
     repo: jtratner/test-ci-builds-golang
     tags: true
