@@ -1,6 +1,9 @@
 language: go
 go:
 - 1.12.6
+env:
+  # if we set this, enables checksums and stuff
+  - GO11MODULE=on
 deploy:
   provider: releases
   api_key:
