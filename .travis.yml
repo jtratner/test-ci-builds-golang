@@ -1,11 +1,6 @@
 language: go
 go:
 - 1.12.6
-before_deploy:
-  - git config --local user.name "jtratner"
-  - git config --local user.email "jeffrey.tratner@gmail.com"
-  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-  - git tag $TRAVIS_TAG
 deploy:
   provider: releases
   api_key:
