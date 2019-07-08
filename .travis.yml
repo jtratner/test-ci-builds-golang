@@ -1,0 +1,9 @@
+language: go
+go:
+  - 1.12.6
+# only build on tagged releases
+deploy:
+  provider: script
+  script: ghr --username jtratner --token $GITHUB_TOKEN --replace --debug $(git tag -l --contains HEAD) dist/
+  on:
+    tags: true
